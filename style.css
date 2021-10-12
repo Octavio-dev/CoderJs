@@ -131,3 +131,21 @@ header h1 a {
     font-size: 1.5rem;
     text-align: center;
 }
+
+.btnComprar {
+    height: 4rem;
+    width: 10rem;
+    background: radial-gradient(blue, white);
+    border-radius: 5px;
+    border: none;
+    letter-spacing: 5px;
+    font-size: 1rem;
+    font-weight: bolder;
+
+    transition: all .9s ease;
+}
+
+.btnComprar:hover{
+    background: rgba(2, 27, 255, 0.911);
+    cursor: pointer;
+}
