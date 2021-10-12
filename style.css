@@ -1,0 +1,113 @@
+/*global*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-image: url(./geimer/f8fa0d7b3d62158db29996ac9957d1f6-joystick-video-game-line-art-pattern-design.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 25vh;
+    }
+
+header h1 a {
+    font-size: 4rem;
+    color: ivory;
+}    
+
+
+/* ---------------------------contenedor de productos -------------------*/
+.main {
+    height: auto;
+    width: auto;
+    border: grey solid 1px;
+}
+
+#contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem 0;
+    background-color: rgba(0, 0, 0, 0.95);
+    overflow: hidden;
+}
+
+/*----------------------------productos -------------------------*/
+
+.producto{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    margin:  2rem;
+    padding: 1rem 0;
+    border: black solid 1px;;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0rem 0rem 3rem 01rem ;
+    transition: all .5s ease-in-out;
+}
+
+.producto:hover{
+    transform: scale(1.2);
+    background-color: rgba(255, 255, 255, .7);
+    box-shadow: 0rem 0rem 3rem 01rem rgba(255, 255, 255, 0.274);
+}
+
+.producto--Img {
+    height: 350px;
+    width: 350px;
+}
+
+.producto--Img img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.producto--Info{
+    color: rgb(154, 247, 4);
+    font-weight: 500;
+    line-height: 2rem;
+    padding: 1rem 2rem;
+}
+
+/*----------------------------------------- carrito---------------------------------*/
+
+.escondido{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    right: -25vw;
+    top: 0;
+    height: 100vh;
+    width: 25vw;
+    background-color: white;
+    transition: all .2s ease-in;
+    }
+
+.mostrado{
+    right: 0;
+
+}
+
+.carrito {
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
