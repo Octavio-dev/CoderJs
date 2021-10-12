@@ -119,7 +119,12 @@ header h1 a {
 }
 
 #productos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
     min-height: 70%;
+    width: 100%;
 }
 
 .mostrado{
@@ -127,9 +132,13 @@ header h1 a {
 }
 
 .carrito {
+    text-align: center;
+    width: 80%;
     line-height: 2.5rem;
     font-size: 1.5rem;
     text-align: center;
+    border: 1px solid black;
+    margin-bottom: 1rem;
 }
 
 .btnComprar {
