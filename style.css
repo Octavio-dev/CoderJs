@@ -7,13 +7,6 @@
     text-decoration: none;
 }
 
-body{
-    background-image: url(./geimer/f8fa0d7b3d62158db29996ac9957d1f6-joystick-video-game-line-art-pattern-design.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
 header{
     display: flex;
     flex-direction: column;
@@ -21,6 +14,11 @@ header{
     align-items: center;
     width: 100%;
     height: 25vh;
+    background-color: #020202;
+    background-image: url(./geimer/fondo01.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     }
 
 header h1 {
@@ -49,7 +47,11 @@ header h1 a {
 .main {
     height: auto;
     width: auto;
-    border: grey solid 1px;
+
+    background-image: url(./geimer/fondo05.jpg);
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 #contenedor{
@@ -57,7 +59,7 @@ header h1 a {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 2rem 0;
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: rgba(0, 0, 0, 0.9);
     overflow: hidden;
 }
 
@@ -73,7 +75,7 @@ header h1 a {
     margin:  2rem;
     padding: 1rem 0;
     border: black solid 1px;;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
     box-shadow: 0rem 0rem 3rem 01rem ;
     transition: all .5s ease-in-out;
 }
@@ -115,11 +117,16 @@ header h1 a {
     height: 100vh;
     width: 25vw;
     padding-bottom: 5rem;
-    background-color: rgba(255, 255, 255, .95);
-    overflow: scroll;
+    background-image: url(./geimer/fondo04.jpg);
+    background-size: contain;
+    background-repeat: repeat-y;
+    opacity: 1;
+    overflow: auto;
     
     transition: all .2s ease-in;
-    }
+}
+
+
 
 .escondido h3 {
     color: blue;
