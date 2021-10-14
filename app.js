@@ -102,7 +102,9 @@ const mostrarCarro = () => {
                             <p>Producto : ${prod.juego}</p>
                             <p>Precio : ${prod.precio * prod.cantidad}</p>
                             <p>Cantidad : ${prod.cantidad}</p>
-                            <input onclick = "borrarDelCarro(${prod.id})" type="button" value="Eliminar">     
+                            <button onclick = "borrarDelCarro(${prod.id})" value="Eliminar"> <span class="material-icons">
+                            delete
+                            </span></button>    
                             `
                          
             productos.appendChild(div)                
